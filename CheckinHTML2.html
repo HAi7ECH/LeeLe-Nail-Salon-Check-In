@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LeeLe Nail Salon</title>
+</head>
+<body>
+	<h1>Welcome to LeeLe Nail Salon</h1>
+	<h2>Check-in</h2>
+	<form action="checkin.php" method="post">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required><br>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required><br>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required><br>
+
+		<input type="submit" value="Check-in">
+	</form>
+
+	<h2>Check-out</h2>
+	<form action="checkout.php" method="post">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required><br>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required><br>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required><br>
+
+		<input type="submit" value="Check-out">
+	</form>
+
+	<h2>Check-in List</h2>
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Points</th>
+		</tr>
+		<?php
+		// Display the check-in list
+		// Replace with your own code to retrieve and display the data
+		?>
+	</table>
+</body>
+</html>
